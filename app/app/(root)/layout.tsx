@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "../../styles/globals.css";
 import React from "react";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "@/components/shared/NavBar";
 
 export const metadata: Metadata = {
   title: "RealEstate App",
@@ -17,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <NavBar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

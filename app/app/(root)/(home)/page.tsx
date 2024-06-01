@@ -1,3 +1,9 @@
+import SmallDeviceNavSection from "@/components/sections/SmallDeviceNavSection";
+
 export default function Home() {
-  return <></>;
+  return (
+    <main>
+      <SmallDeviceNavSection />
+    </main>
+  );
 }
