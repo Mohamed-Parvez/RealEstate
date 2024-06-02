@@ -17,7 +17,9 @@ const NavBar = () => {
       >
         <div className="flex-between gap-2">
           <Logo />
-          <Location />
+          <div className="hidden sm:block">
+            <Location />
+          </div>
         </div>
         <div>
           <div className="flex-center mt-[-8px] h-10 w-full max-w-[740px] gap-3 lg:mt-[-12px] lg:gap-5">

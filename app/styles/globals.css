@@ -79,6 +79,10 @@
     @apply text-[14px] font-semibold leading-[18.2px];
   }
 
+  .body-bold {
+    @apply text-[14px] font-bold leading-[18.2px];
+  }
+
   .small-regular {
     @apply text-[12px] font-normal leading-[15.6px];
   }
@@ -89,6 +93,10 @@
 
   .small-semibold {
     @apply text-[12px] font-semibold leading-[15.6px];
+  }
+
+  .small-bold {
+    @apply text-[12px] font-bold leading-[15.6px];
   }
 
   .extra-small-regular {
