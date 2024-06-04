@@ -1,7 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-
+import { Input } from "@/components/ui/input";
+import Image from "next/image";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { PopularCities, PropertyType, LocationRadioGroup } from "@/constants";
+import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,13 +14,9 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-import { Input } from "@/components/ui/input";
-import Image from "next/image";
-
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-
 const Location = () => {
   const [state, setState] = useState("Residential");
+
   return (
     <NavigationMenu className="mt-[-10px] lg:mt-[-12px]">
       <NavigationMenuList>
@@ -25,24 +25,21 @@ const Location = () => {
             Location ...
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <div className="w-[400px] flex-col items-center justify-start space-y-4 p-4 lg:w-[640px] lg:space-y-8 lg:p-6">
-              <p className="text-[22px] font-semibold text-black lg:text-[36px]">
+            <div className="w-[410px] flex-col items-center justify-start space-y-4 p-4 lg:w-[640px] lg:space-y-8 lg:p-6">
+              <p className="h2-semibold lg:h1-semibold font-semibold text-black">
                 Explore Properties
               </p>
               <div className="flex-col items-center justify-start space-y-4 lg:space-y-6">
                 <ul className="flex w-[360px] max-w-[600px] items-center space-x-6 lg:w-[560px] lg:space-x-10">
-                  <li className="text-[10px] text-gray-500 lg:text-[14px]">
-                    Buy
-                  </li>
-                  <li className="text-[10px] text-gray-500 lg:text-[14px]">
-                    Rent
-                  </li>
-                  <li className="text-[10px] text-gray-500 lg:text-[14px]">
-                    Commercial
-                  </li>
-                  <li className="text-[10px] text-gray-500 lg:text-[14px]">
-                    Plot / Land
-                  </li>
+                  {PropertyType.map((value) => (
+                    <li
+                      key={value.key}
+                      className="extra-small-regular lg:body-regular text-gray-500"
+                      id={value.id}
+                    >
+                      {value.label}
+                    </li>
+                  ))}
                 </ul>
                 <div
                   className="flex w-[370px] items-center justify-between rounded-md px-2 shadow-md
@@ -52,7 +49,7 @@ const Location = () => {
                   <NavigationMenu className="border-r">
                     <NavigationMenuList>
                       <NavigationMenuItem className="px-2">
-                        <NavigationMenuTrigger className="text-[10px] lg:text-[14px]">
+                        <NavigationMenuTrigger className="extra-small-regular lg:body-regular w-[80px] md:w-[100px]">
                           {state}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
@@ -60,30 +57,23 @@ const Location = () => {
                             className=" bg-white p-4 shadow-md ring-1 ring-slate-100"
                             defaultValue="residential"
                           >
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem
-                                value="=residential"
-                                id="r1"
-                                onClick={() => {
-                                  setState("Residential");
-                                }}
-                              />
-                              <p className="text-[10px] lg:text-[14px]">
-                                Residential
-                              </p>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem
-                                onClick={() => {
-                                  setState("Commercial");
-                                }}
-                                value="commercial"
-                                id="r2"
-                              />
-                              <p className="text-[10px] lg:text-[14px]">
-                                Commercial
-                              </p>
-                            </div>
+                            {LocationRadioGroup.map((value) => (
+                              <div
+                                key={value.key}
+                                className="flex items-center space-x-2"
+                              >
+                                <RadioGroupItem
+                                  value={value.value}
+                                  id={value.id}
+                                  onClick={() => {
+                                    setState(value.label);
+                                  }}
+                                />
+                                <p className="extra-small-regular lg:body-regular">
+                                  {value.label}
+                                </p>
+                              </div>
+                            ))}
                           </RadioGroup>
                         </NavigationMenuContent>
                       </NavigationMenuItem>
@@ -97,43 +87,32 @@ const Location = () => {
                     placeholder="Search City"
                     className="h-10 border-none text-[10px] text-gray-500 lg:ml-[10px] lg:h-16 lg:text-[14px]"
                   />
-                  <button className="rounded-[6px] bg-black px-4 py-[6px] text-[10px] font-bold text-white lg:text-[14px]">
+                  <button className="extra-small-semibold lg:body-semibold rounded-[6px] bg-black px-4 py-[6px] text-white">
                     Search
                   </button>
                 </div>
                 <div className="flex-col items-start justify-start">
-                  <p className="text-[12px] lg:text-[16px]">Popular Cities</p>
-                  <ul className="flex w-[380px] flex-wrap items-center space-x-2 space-y-2 py-3 lg:w-[600px] lg:space-x-6 lg:space-y-4">
-                    <li className="mt-2 rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:mt-3 lg:px-5 lg:text-[14px]">
+                  <p className="small-medium lg:paragraph-medium">
+                    Popular Cities
+                  </p>
+                  <ul className="flex w-[380px] flex-wrap items-center justify-center space-x-2 space-y-2 py-3 lg:w-[580px] lg:space-x-6 lg:space-y-4">
+                    <li
+                      id="chennai"
+                      className="lg:body-regular mt-2 rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:mt-[14px] lg:px-5"
+                    >
                       Chennai
                     </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Banglore
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500  shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Hyderabad
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Mumbai
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Delhi
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500  shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Cochin
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500  shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Goa
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Rajasthan
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500  shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Mysore
-                    </li>
-                    <li className="rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5 lg:text-[14px]">
-                      Karur
-                    </li>
+                    {PopularCities.map((value) => (
+                      <Link key={value.key} href={value.href}>
+                        <li
+                          id={value.id}
+                          key={value.key}
+                          className="lg:body-regular rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5"
+                        >
+                          {value.city}
+                        </li>
+                      </Link>
+                    ))}
                   </ul>
                 </div>
               </div>

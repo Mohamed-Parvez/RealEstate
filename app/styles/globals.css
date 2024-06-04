@@ -27,6 +27,10 @@
     @apply text-[30px] font-bold leading-[42px] tracking-tighter;
   }
 
+  .h1-semibold {
+    @apply text-[30px] font-semibold leading-[42px] tracking-tighter;
+  }
+
   .h2-bold {
     @apply text-[24px] font-bold leading-[31.2px];
   }
@@ -109,6 +113,10 @@
 
   .extra-small-medium {
     @apply text-[10px] font-medium leading-[13px];
+  }
+
+  .extra-small-semibold {
+    @apply text-[10px] font-semibold leading-[13px];
   }
 
   .add-property-button {
