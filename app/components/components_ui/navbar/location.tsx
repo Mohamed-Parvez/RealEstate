@@ -30,11 +30,11 @@ const Location = () => {
                 Explore Properties
               </p>
               <div className="flex-col items-center justify-start space-y-4 lg:space-y-6">
-                <ul className="flex w-[360px] max-w-[600px] items-center space-x-6 lg:w-[560px] lg:space-x-10">
+                <ul className="flex h-6 w-[360px] max-w-[600px] items-center space-x-6 lg:h-8 lg:w-[560px] lg:space-x-10">
                   {PropertyType.map((value) => (
                     <li
                       key={value.key}
-                      className="extra-small-regular lg:body-regular text-gray-500"
+                      className="extra-small-regular lg:body-regular h-6 pb-0.5 text-gray-500 hover:border-b hover:border-b-black lg:pb-1"
                       id={value.id}
                     >
                       {value.label}

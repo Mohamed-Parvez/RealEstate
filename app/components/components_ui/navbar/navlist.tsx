@@ -3,49 +3,21 @@
 import React from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NoChevronNavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import Owners from "./navlist_components/Owners";
+import Buyers from "./navlist_components/Buyers";
+import Tenants from "./navlist_components/Tenants";
+import Agents from "./navlist_components/Agents";
 
 const NavList = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem className="h-10 px-1.5 md:px-2 lg:px-[10px]">
-          <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
-            For Owners
-          </NoChevronNavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="px-1.5 md:px-2 lg:px-[10px]">
-          <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
-            For Buyers
-          </NoChevronNavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="px-1.5 md:px-2 lg:px-[10px]">
-          <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
-            For Tenants
-          </NoChevronNavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="px-1.5 md:px-2 lg:px-[10px]">
-          <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
-            For Agents
-          </NoChevronNavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>Link</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
+        <Owners />
+        <Buyers />
+        <Tenants />
+        <Agents />
       </NavigationMenuList>
     </NavigationMenu>
   );
