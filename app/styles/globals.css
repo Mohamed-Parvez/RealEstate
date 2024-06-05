@@ -119,6 +119,18 @@
     @apply text-[10px] font-semibold leading-[13px];
   }
 
+  .vx-small {
+    @apply text-[9px] font-normal leading-[12px];
+  }
+
+  .vx-small-medium {
+    @apply text-[9px] font-medium leading-[12px];
+  }
+
+  .vx-small-semibold {
+    @apply text-[9px] font-semibold leading-[12px];
+  }
+
   .add-property-button {
     @apply text-nowrap rounded-[8px] bg-black px-[18px] py-[10px] small-medium
      text-white transition-colors hover:border hover:border-black hover:bg-white

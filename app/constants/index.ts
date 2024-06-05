@@ -31,3 +31,10 @@ export const LocationRadioGroup = [
     label: "Commercial",
   },
 ];
+
+export const OwnerArticles = [
+  { label: "Articles For Owners", key: 1, href: "/" },
+  { label: "Real Estate News", key: 2, href: "/" },
+  { label: "Seller Guide", key: 3, href: "/" },
+  { label: "Home Interior", key: 4, href: "/" },
+];
