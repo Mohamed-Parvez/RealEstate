@@ -4,9 +4,9 @@ import {
   NoChevronNavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import React from "react";
-import { OwnerArticles } from "@/constants";
 import Link from "next/link";
 import LinkFooter from "./LinkFooter";
+import { BuyerArticles } from "./Articles";
 
 const OwnerActions = [
   { label: "Add a Property", key: 1, href: "/" },
@@ -20,11 +20,11 @@ const Owners = () => {
         For Owners
       </NoChevronNavigationMenuTrigger>
       <NavigationMenuContent>
-        <div className="flex h-auto max-h-[340px] w-[340px] flex-col items-center justify-between gap-3 space-y-2 p-4 md:w-[440px] lg:w-[540px]">
-          <div className="flex w-[280px] justify-between md:w-[380px] lg:w-[480px]">
-            <div className="flex-column w-[120px] space-y-3 p-2 md:w-[160px] lg:w-[170px]">
+        <div className="flex size-auto max-h-[340px] max-w-[280px] flex-col items-center justify-between gap-3 space-y-2 p-4 md:max-w-[330px] lg:max-w-[370px]">
+          <div className="flex w-[240px] justify-between p-2 md:w-[280px] lg:w-[320px]">
+            <div className="flex-column w-auto max-w-[130px] space-y-3 p-2 md:max-w-[170px] lg:max-w-[210px]">
               <div className="flex-column space-y-1">
-                <p className="small-medium md:body-medium lg:paragraph-medium">
+                <p className="extra-small-medium md:body-medium lg:paragraph-medium">
                   Owner Actions
                 </p>
                 <div className="border-b border-b-slate-200"></div>
@@ -34,7 +34,7 @@ const Owners = () => {
                   <div key={value.key}>
                     <Link
                       href={value.href}
-                      className="extra-small-regular md:small-regular lg:body-regular"
+                      className="vx-extra-small md:vx-small lg:extra-small-regular"
                     >
                       {value.label}
                     </Link>
@@ -42,26 +42,7 @@ const Owners = () => {
                 ))}
               </div>
             </div>
-            <div className="flex-column w-[120px] space-y-3 p-2 md:w-[160px] lg:w-[170px]">
-              <div className="flex-column space-y-1">
-                <p className="small-medium md:body-medium lg:paragraph-medium">
-                  Articles
-                </p>
-                <div className="border-b border-b-slate-200"></div>
-              </div>
-              <div className="flex-column space-y-1 md:space-y-3">
-                {OwnerArticles.map((value) => (
-                  <div key={value.key}>
-                    <Link
-                      href={value.href}
-                      className="extra-small-regular md:small-regular lg:body-regular"
-                    >
-                      {value.label}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <BuyerArticles />
           </div>
           <div className="w-[280px] border border-slate-100 px-4 md:w-[380px] lg:w-[480px]"></div>
           <LinkFooter />

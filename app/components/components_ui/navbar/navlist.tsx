@@ -4,7 +4,7 @@ import React from "react";
 import {
   NavigationMenu,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "@/components/ui/navigation-menu-modified";
 import Owners from "./navlist_components/Owners";
 import Buyers from "./navlist_components/Buyers";
 import Tenants from "./navlist_components/Tenants";

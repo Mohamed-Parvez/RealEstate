@@ -9,7 +9,7 @@ const LinkFooter = () => {
           <div className="relative size-[14px]">
             <Image src="/assets/icons/phone.svg" alt="phone" fill />
           </div>
-          <p className="vx-small md:extra-small-regular lg:small-regular text-black">
+          <p className="vx-extra-small md:vx-small lg:extra-small-regular text-black">
             93442 17163
           </p>
         </div>
@@ -17,7 +17,7 @@ const LinkFooter = () => {
           <div className="relative size-[16px]">
             <Image src="/assets/icons/mail.svg" alt="phone" fill />
           </div>
-          <p className="vx-small md:extra-small-regular lg:small-regular">
+          <p className="vx-extra-small md:vx-small lg:extra-small-regular">
             clash.parwesh@gmail.com
           </p>
         </div>

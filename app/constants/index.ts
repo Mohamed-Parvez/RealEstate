@@ -32,9 +32,31 @@ export const LocationRadioGroup = [
   },
 ];
 
-export const OwnerArticles = [
+export const OwnerArticlesData = [
   { label: "Articles For Owners", key: 1, href: "/" },
   { label: "Real Estate News", key: 2, href: "/" },
   { label: "Seller Guide", key: 3, href: "/" },
   { label: "Home Interior", key: 4, href: "/" },
+];
+
+export const BuyerArticlesData = [
+  { label: "Articles For Buyers", key: 1, href: "/" },
+  { label: "Real Estate News", key: 2, href: "/" },
+  { label: "Seller Guide", key: 3, href: "/" },
+  { label: "Home Interior", key: 4, href: "/" },
+];
+
+export const BuyaHouse = [
+  { label: "Flats", key: 2, href: "/" },
+  { label: "Farm Houses", key: 3, href: "/" },
+  { label: "Independence House", key: 1, href: "/" },
+];
+
+export const Commercial = [
+  { label: "Shops", key: 1, href: "/" },
+  { label: "Showrooms", key: 2, href: "/" },
+  { label: "Industrial Lands/Plots", key: 3, href: "/" },
+  { label: "Agricultural / Farm Lands", key: 4, href: "/" },
+  { label: "Commercial Office spaces", key: 5, href: "/" },
+  { label: "Co-working Office spaces", key: 6, href: "/" },
 ];
