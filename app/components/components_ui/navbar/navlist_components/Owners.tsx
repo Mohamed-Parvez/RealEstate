@@ -20,7 +20,7 @@ const Owners = () => {
         For Owners
       </NoChevronNavigationMenuTrigger>
       <NavigationMenuContent>
-        <div className="flex size-auto max-h-[340px] max-w-[280px] flex-col items-center justify-between gap-3 space-y-2 p-4 md:max-w-[330px] lg:max-w-[370px]">
+        <div className="mt-2 flex size-auto max-h-[340px] max-w-[280px] flex-col items-center justify-between gap-3 space-y-2 p-4 md:mt-3 md:max-w-[330px] lg:mt-4 lg:max-w-[370px]">
           <div className="flex w-[240px] justify-between p-2 md:w-[280px] lg:w-[320px]">
             <div className="flex-column w-auto max-w-[130px] space-y-3 p-2 md:max-w-[170px] lg:max-w-[210px]">
               <div className="flex-column space-y-1">
