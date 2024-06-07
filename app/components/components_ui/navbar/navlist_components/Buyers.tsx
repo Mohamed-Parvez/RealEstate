@@ -24,8 +24,8 @@ const Buyers = () => {
         For Buyers
       </NoChevronNavigationMenuTrigger>
       <NavigationMenuContent>
-        <div className="flex size-auto max-h-[580px] w-auto max-w-[620px] flex-col items-center justify-between gap-3 space-y-2 p-4 md:max-w-[720px] lg:max-w-[890px]">
-          <div className="flex w-[560px] justify-between p-2 md:w-[650px] lg:w-[810px]">
+        <div className="mt-2 flex size-auto max-h-[580px] w-auto max-w-screen-sm flex-col items-center justify-between gap-3 space-y-2 p-4 md:mt-3 md:max-w-[720px] lg:mt-4 lg:max-w-[890px]">
+          <div className="flex w-[580px] justify-between p-2 md:w-[690px] lg:w-[830px]">
             <div className="flex-column w-[80px] space-y-3 p-2 md:w-[120px] lg:w-[140px]">
               <div className="flex-column space-y-1">
                 <p className="extra-small-medium md:body-medium lg:paragraph-medium">
@@ -66,7 +66,7 @@ const Buyers = () => {
                 ))}
               </div>
             </div>
-            <div className="flex-column w-[120px] space-y-3 p-2 md:w-[160px] lg:w-[180px]">
+            <div className="flex-column w-[120px] space-y-3 p-2 md:w-[140px] lg:w-[180px]">
               <div className="flex-column space-y-1">
                 <p className="extra-small-medium md:body-medium lg:paragraph-medium">
                   Commercial
