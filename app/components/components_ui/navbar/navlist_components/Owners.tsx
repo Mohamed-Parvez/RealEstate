@@ -44,7 +44,7 @@ const Owners = () => {
             </div>
             <BuyerArticles />
           </div>
-          <div className="w-[280px] border border-slate-100 px-4 md:w-[380px] lg:w-[480px]"></div>
+          <div className="w-[240px] border border-slate-100 px-4 md:w-[280px] lg:w-[320px]"></div>
           <LinkFooter />
         </div>
       </NavigationMenuContent>
