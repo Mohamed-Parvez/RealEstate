@@ -60,3 +60,21 @@ export const Commercial = [
   { label: "Commercial Office spaces", key: 5, href: "/" },
   { label: "Co-working Office spaces", key: 6, href: "/" },
 ];
+
+export const RentHouse = [
+  { label: "Flats", key: 1, href: "/" },
+  { label: "Independent House", key: 2, href: "/" },
+  { label: "Apartments", key: 3, href: "/" },
+];
+
+export const CommercialRent = [
+  { label: "Office Spaces", key: 1, href: "/" },
+  { label: "Co-Working Office Spaces", key: 2, href: "/" },
+  { label: "Apartments", key: 3, href: "/" },
+  { label: "Shops", key: 4, href: "/" },
+  { label: "Factory", key: 5, href: "/" },
+  { label: "Showrooms", key: 6, href: "/" },
+  { label: "Warehouses", key: 7, href: "/" },
+  { label: "Industrial Lands / Plots", key: 8, href: "/" },
+  { label: "Agricultural / Form Lands", key: 9, href: "/" },
+];
