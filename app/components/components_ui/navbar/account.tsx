@@ -40,7 +40,7 @@ const Account = () => {
       <DialogTrigger asChild>
         <Button
           variant="outline"
-          className="small-bold lg:body-bold ml-[-24px] border-none"
+          className="small-medium lg:body-medium ml-[-24px] border-none"
         >
           REGISTER / LOGIN
         </Button>
@@ -96,7 +96,7 @@ const Account = () => {
   const [NotLogedIn, LogedIn] = useState(
     <DropdownMenuItem>
       <LogIn className="mr-2 size-4" />
-      <span className="extra-small-regular md:small-regular lg:body-regular">
+      <span className="vx-small md:extra-small-regular lg:small-regular">
         Log In
       </span>
     </DropdownMenuItem>
@@ -124,19 +124,19 @@ const Account = () => {
           <DropdownMenuGroup>
             <DropdownMenuItem>
               <User className="mr-2 size-4" />
-              <span className="extra-small-regular md:small-regular lg:body-regular">
+              <span className="vx-small md:extra-small-regular lg:small-regular">
                 Profile
               </span>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Heart className="mr-2 size-4" />
-              <span className="extra-small-regular md:small-regular lg:body-regular">
+              <span className="vx-small md:extra-small-regular lg:small-regular">
                 Favourites
               </span>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Settings className="mr-2 size-4" />
-              <span className="extra-small-regular md:small-regular lg:body-regular">
+              <span className="vx-small md:extra-small-regular lg:small-regular">
                 Settings
               </span>
             </DropdownMenuItem>

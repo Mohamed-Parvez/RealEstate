@@ -47,6 +47,10 @@
     @apply text-[20px] font-semibold leading-[24.8px];
   }
 
+  .h3-medium {
+    @apply text-[20px] font-medium leading-[24.8px];
+  }
+
   .base-medium {
     @apply text-[18px] font-medium leading-[25.2px];
   }
