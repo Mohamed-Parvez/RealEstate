@@ -94,8 +94,8 @@ const Account = () => {
     </Dialog>
   );
   const [NotLogedIn, LogedIn] = useState(
-    <DropdownMenuItem>
-      <LogIn className="mr-2 size-4" />
+    <DropdownMenuItem className="ml-2 mt-0.5 md:mt-1 lg:ml-3">
+      <LogIn className="mr-2 size-3 lg:size-4" />
       <span className="vx-small md:extra-small-regular lg:small-regular">
         Log In
       </span>
@@ -117,31 +117,31 @@ const Account = () => {
             </div>
           </div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-36 sm:w-40 lg:w-48">
+        <DropdownMenuContent className="w-[150px] rounded-[10px] sm:w-[160px] lg:w-[170px]">
           <DropdownMenuLabel className="mb-1 ml-3">
             {Notregistered}
           </DropdownMenuLabel>
-          <DropdownMenuGroup>
+          <DropdownMenuGroup className="ml-2 md:ml-3">
             <DropdownMenuItem>
-              <User className="mr-2 size-4" />
+              <User className="mr-2 size-3 lg:size-4" />
               <span className="vx-small md:extra-small-regular lg:small-regular">
                 Profile
               </span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Heart className="mr-2 size-4" />
+              <Heart className="mr-2 size-3 lg:size-4" />
               <span className="vx-small md:extra-small-regular lg:small-regular">
                 Favourites
               </span>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Settings className="mr-2 size-4" />
+              <Settings className="mr-2 size-3 lg:size-4" />
               <span className="vx-small md:extra-small-regular lg:small-regular">
                 Settings
               </span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
-          <DropdownMenuSeparator />
+          <div className="mt-2 w-[100px] border border-slate-100 px-4 sm:w-[130px] md:mt-3 lg:w-[140px]"></div>
           {NotLogedIn}
         </DropdownMenuContent>
       </DropdownMenu>
