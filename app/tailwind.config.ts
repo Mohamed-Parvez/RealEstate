@@ -12,6 +12,8 @@ const config = {
   theme: {
     screens: {
       xs: "425px",
+      fs: "520px",
+      fx: "540px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -81,7 +83,10 @@ const config = {
       backgroundImage: {},
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 } satisfies Config;
 
 export default config;
