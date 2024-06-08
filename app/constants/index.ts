@@ -84,3 +84,24 @@ export const CommercialRent = [
   { label: "Industrial Lands / Plots", key: 8, href: "/" },
   { label: "Agricultural / Form Lands", key: 9, href: "/" },
 ];
+
+export const SmallDeviceNavSectionData = [
+  { label: "Buy", src: "/assets/icons/SM-Dev-Nav-Icons/house.svg", key: 1 },
+  { label: "Sell", src: "/assets/icons/SM-Dev-Nav-Icons/sell.svg", key: 2 },
+  { label: "Rent", src: "/assets/icons/SM-Dev-Nav-Icons/rent.svg", key: 3 },
+  {
+    label: "Plot / Land",
+    src: "/assets/icons/SM-Dev-Nav-Icons/plot.svg",
+    key: 4,
+  },
+  {
+    label: "Buy Commercial",
+    src: "/assets/icons/SM-Dev-Nav-Icons/shop.svg",
+    key: 5,
+  },
+  {
+    label: "PG/Co-living",
+    src: "/assets/icons/SM-Dev-Nav-Icons/co-living.svg",
+    key: 6,
+  },
+];
