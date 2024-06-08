@@ -16,7 +16,7 @@ const OwnerActions = [
 const Owners = () => {
   return (
     <NavigationMenuItem className="h-10 px-1.5 md:px-2 lg:px-[10px]">
-      <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
+      <NoChevronNavigationMenuTrigger className="extra-small-regular hover-underline-animation md:small-regular lg:body-regular">
         For Owners
       </NoChevronNavigationMenuTrigger>
       <NavigationMenuContent>

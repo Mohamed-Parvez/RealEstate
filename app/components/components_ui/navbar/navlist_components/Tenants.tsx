@@ -30,7 +30,7 @@ export const PopularAreas = [
 const Tenants = () => {
   return (
     <NavigationMenuItem className="px-1.5 md:px-2 lg:px-[10px]">
-      <NoChevronNavigationMenuTrigger className="extra-small-regular md:small-regular lg:body-regular">
+      <NoChevronNavigationMenuTrigger className="extra-small-regular hover-underline-animation md:small-regular lg:body-regular">
         For Tenants
       </NoChevronNavigationMenuTrigger>
       <NavigationMenuContent>
