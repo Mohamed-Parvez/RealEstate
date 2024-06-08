@@ -46,6 +46,12 @@ export const BuyerArticlesData = [
   { label: "Home Interior", key: 4, href: "/" },
 ];
 
+export const AgentArticlesData = [
+  { label: "Articles For Agents", key: 1, href: "/" },
+  { label: "Real Estate News", key: 2, href: "/" },
+  { label: "Agents Guide", key: 3, href: "/" },
+];
+
 export const BuyaHouse = [
   { label: "Flats", key: 2, href: "/" },
   { label: "Farm Houses", key: 3, href: "/" },
