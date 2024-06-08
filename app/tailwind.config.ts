@@ -12,8 +12,10 @@ const config = {
   theme: {
     screens: {
       xs: "425px",
+      fo: "470px",
       fs: "520px",
       fx: "540px",
+      ff: "560px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
