@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { PopularCities, LocationRadioGroup } from "@/constants";
+import { PopularCities } from "@/constants";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -14,6 +13,13 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import PropertyType from "../propertytype";
+
+import {
+  Menubar,
+  MenubarContent,
+  MenubarMenu,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 const Location = () => {
   const [state, setState] = useState("Residential");
@@ -37,40 +43,56 @@ const Location = () => {
                    ring-1 ring-slate-100 lg:w-[580px] lg:px-4
                   "
                 >
-                  <NavigationMenu className="border-r">
-                    <NavigationMenuList>
-                      <NavigationMenuItem className="px-2">
-                        <NavigationMenuTrigger className="extra-small-regular lg:body-regular w-[80px] md:w-[100px]">
-                          {state}
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <RadioGroup
-                            className=" bg-white p-4 shadow-md ring-1 ring-slate-100"
-                            defaultValue="residential"
-                          >
-                            {LocationRadioGroup.map((value) => (
-                              <div
-                                key={value.key}
-                                className="flex items-center space-x-2"
-                              >
-                                <RadioGroupItem
-                                  value={value.value}
-                                  id={value.id}
-                                  onClick={() => {
-                                    setState(value.label);
-                                  }}
-                                />
-                                <p className="extra-small-regular lg:body-regular">
-                                  {value.label}
-                                </p>
-                              </div>
-                            ))}
-                          </RadioGroup>
-                        </NavigationMenuContent>
-                      </NavigationMenuItem>
-                    </NavigationMenuList>
-                  </NavigationMenu>
-                  <div className="relative ml-[14px] size-[42px] lg:ml-[24px] lg:size-[42px]">
+                  <Menubar className="border-none">
+                    <MenubarMenu>
+                      <MenubarTrigger className="extra-small-regular lg:body-regular">
+                        {state}
+                      </MenubarTrigger>
+                      <MenubarContent className="hidden min-w-[120px] rounded-[10px] bg-white shadow-md ring-1 ring-slate-100 sm:block">
+                        <div className="flex flex-col items-start space-y-3 px-2 py-3">
+                          <div className="flex items-center gap-2">
+                            <input
+                              type="radio"
+                              id="res"
+                              defaultChecked
+                              value="Residential"
+                              onClick={() => {
+                                setState(document.getElementById("res").value);
+                                document.getElementById("res").checked = true;
+                                document.getElementById("com").checked = false;
+                              }}
+                            />
+                            <label
+                              className="extra-small-regular lg:body-regular"
+                              for="residential"
+                            >
+                              Residential
+                            </label>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <input
+                              type="radio"
+                              id="com"
+                              value="Commercial"
+                              onClick={() => {
+                                setState(document.getElementById("com").value);
+                                document.getElementById("com").checked = true;
+                                document.getElementById("res").checked = false;
+                              }}
+                            />
+                            <label
+                              className="extra-small-regular lg:body-regular"
+                              for="commercial"
+                            >
+                              Commercial
+                            </label>
+                          </div>
+                        </div>
+                      </MenubarContent>
+                    </MenubarMenu>
+                  </Menubar>
+
+                  <div className="relative size-[32px] lg:ml-2 lg:size-[42px]">
                     <Image alt="search" src={"/assets/icons/search.svg"} fill />
                   </div>
                   <Input
