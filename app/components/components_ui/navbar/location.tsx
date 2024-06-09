@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { PopularCities, PropertyType, LocationRadioGroup } from "@/constants";
+import { PopularCities, LocationRadioGroup } from "@/constants";
 import Link from "next/link";
 import {
   NavigationMenu,
@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import PropertyType from "../propertytype";
 
 const Location = () => {
   const [state, setState] = useState("Residential");
@@ -30,17 +31,7 @@ const Location = () => {
                 Explore Properties
               </p>
               <div className="flex-col items-center justify-start space-y-4 lg:space-y-6">
-                <ul className="flex h-6 w-[360px] max-w-[600px] items-center space-x-6 lg:h-8 lg:w-[560px] lg:space-x-10">
-                  {PropertyType.map((value) => (
-                    <li
-                      key={value.key}
-                      className="extra-small-regular lg:body-regular h-6 pb-0.5 text-gray-500 hover:border-b hover:border-b-black lg:pb-1"
-                      id={value.id}
-                    >
-                      {value.label}
-                    </li>
-                  ))}
-                </ul>
+                <PropertyType />
                 <div
                   className="flex w-[370px] items-center justify-between rounded-md px-2 shadow-md
                    ring-1 ring-slate-100 lg:w-[580px] lg:px-4

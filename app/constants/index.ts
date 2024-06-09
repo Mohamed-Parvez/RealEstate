@@ -10,13 +10,6 @@ export const PopularCities = [
   { city: "Karur", key: 10, id: "karur", href: "karur" },
 ];
 
-export const PropertyType = [
-  { label: "Buy", id: "buy", key: 1 },
-  { label: "Sell", id: "sell", key: 2 },
-  { label: "Commercial", id: "commercial", key: 3 },
-  { label: "Plot / Land", id: "plotland", key: 4 },
-];
-
 export const LocationRadioGroup = [
   {
     key: 1,
