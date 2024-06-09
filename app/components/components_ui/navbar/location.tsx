@@ -98,7 +98,7 @@ const Location = () => {
                   <ul className="flex w-[380px] flex-wrap items-center justify-center space-x-2 space-y-2 py-3 lg:w-[580px] lg:space-x-6 lg:space-y-4">
                     <li
                       id="chennai"
-                      className="lg:body-regular mt-2 rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:mt-[14px] lg:px-5"
+                      className="lg:body-regular vx-small mt-2 rounded-full px-4 py-2 text-gray-500 shadow-md ring-1 ring-slate-100 lg:mt-[14px] lg:px-5"
                     >
                       Chennai
                     </li>
@@ -107,7 +107,7 @@ const Location = () => {
                         <li
                           id={value.id}
                           key={value.key}
-                          className="lg:body-regular rounded-full px-4 py-2 text-[9px] text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5"
+                          className="lg:body-regular vx-small rounded-full px-4 py-2 text-gray-500 shadow-md ring-1 ring-slate-100 lg:px-5"
                         >
                           {value.city}
                         </li>
