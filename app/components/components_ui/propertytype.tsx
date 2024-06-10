@@ -4,9 +4,9 @@ import React from "react";
 
 const PropertyType = () => {
   return (
-    <div className="flex h-7 w-[360px] max-w-[600px] items-center space-x-2 lg:h-8 lg:w-[560px] lg:space-x-4">
+    <div className="flex h-6 w-[360px] max-w-[600px] items-center space-x-2 lg:h-8 lg:w-[560px] lg:space-x-4">
       <button
-        className="extra-small-regular lg:body-regular h-7 rounded-[4px] bg-black px-3 text-white lg:px-4"
+        className="extra-small-regular lg:body-regular h-6 rounded-[4px] bg-black px-3 text-white lg:h-8 lg:px-4"
         id="buy"
         onClick={() => {
           document.getElementById("buy").style.backgroundColor = "black";
@@ -25,7 +25,7 @@ const PropertyType = () => {
         Buy
       </button>
       <button
-        className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
+        className="extra-small-regular lg:body-regular h-6 rounded-[4px] px-3 text-gray-500 lg:h-8 lg:px-4"
         id="rentlease"
         onClick={() => {
           document.getElementById("rentlease").style.backgroundColor = "black";
@@ -44,7 +44,7 @@ const PropertyType = () => {
         Rent / Lease
       </button>
       <button
-        className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
+        className="extra-small-regular lg:body-regular h-6 rounded-[4px] px-3 text-gray-500 lg:h-8 lg:px-4"
         id="pgcoliving"
         onClick={() => {
           document.getElementById("pgcoliving").style.backgroundColor = "black";
@@ -63,7 +63,7 @@ const PropertyType = () => {
         PG / Co-living
       </button>
       <button
-        className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
+        className="extra-small-regular lg:body-regular h-6 rounded-[4px] px-3 text-gray-500 lg:h-8 lg:px-4"
         id="plotland"
         onClick={() => {
           document.getElementById("plotland").style.backgroundColor = "black";
