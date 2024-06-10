@@ -11,11 +11,11 @@ const PropertyType = () => {
         onClick={() => {
           document.getElementById("buy").style.backgroundColor = "black";
           document.getElementById("buy").style.color = "white";
-          document.getElementById("sell").style.backgroundColor = "white";
-          document.getElementById("sell").style.color =
+          document.getElementById("rentlease").style.backgroundColor = "white";
+          document.getElementById("rentlease").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
-          document.getElementById("commercial").style.backgroundColor = "white";
-          document.getElementById("commercial").style.color =
+          document.getElementById("pgcoliving").style.backgroundColor = "white";
+          document.getElementById("pgcoliving").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
           document.getElementById("plotland").style.backgroundColor = "white";
           document.getElementById("plotland").style.color =
@@ -26,41 +26,41 @@ const PropertyType = () => {
       </button>
       <button
         className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
-        id="sell"
+        id="rentlease"
         onClick={() => {
-          document.getElementById("sell").style.backgroundColor = "black";
-          document.getElementById("sell").style.color = "white";
+          document.getElementById("rentlease").style.backgroundColor = "black";
+          document.getElementById("rentlease").style.color = "white";
           document.getElementById("buy").style.backgroundColor = "white";
           document.getElementById("buy").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
           document.getElementById("plotland").style.backgroundColor = "white";
           document.getElementById("plotland").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
-          document.getElementById("commercial").style.backgroundColor = "white";
-          document.getElementById("commercial").style.color =
+          document.getElementById("pgcoliving").style.backgroundColor = "white";
+          document.getElementById("pgcoliving").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
         }}
       >
-        Sell
+        Rent / Lease
       </button>
       <button
         className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
-        id="commercial"
+        id="pgcoliving"
         onClick={() => {
-          document.getElementById("commercial").style.backgroundColor = "black";
-          document.getElementById("commercial").style.color = "white";
+          document.getElementById("pgcoliving").style.backgroundColor = "black";
+          document.getElementById("pgcoliving").style.color = "white";
           document.getElementById("plotland").style.backgroundColor = "white";
           document.getElementById("plotland").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
-          document.getElementById("sell").style.backgroundColor = "white";
-          document.getElementById("sell").style.color =
+          document.getElementById("rentlease").style.backgroundColor = "white";
+          document.getElementById("rentlease").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
           document.getElementById("buy").style.backgroundColor = "white";
           document.getElementById("buy").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
         }}
       >
-        Commercial
+        PG / Co-living
       </button>
       <button
         className="extra-small-regular lg:body-regular h-7 rounded-[4px] px-3 text-gray-500 lg:px-4"
@@ -68,11 +68,11 @@ const PropertyType = () => {
         onClick={() => {
           document.getElementById("plotland").style.backgroundColor = "black";
           document.getElementById("plotland").style.color = "white";
-          document.getElementById("sell").style.backgroundColor = "white";
-          document.getElementById("sell").style.color =
+          document.getElementById("rentlease").style.backgroundColor = "white";
+          document.getElementById("rentlease").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
-          document.getElementById("commercial").style.backgroundColor = "white";
-          document.getElementById("commercial").style.color =
+          document.getElementById("pgcoliving").style.backgroundColor = "white";
+          document.getElementById("pgcoliving").style.color =
             "rgb(107 114 128 / var(--tw-text-opacity))";
           document.getElementById("buy").style.backgroundColor = "white";
           document.getElementById("buy").style.color =
