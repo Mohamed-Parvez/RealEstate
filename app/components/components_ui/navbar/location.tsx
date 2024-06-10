@@ -105,7 +105,7 @@ const Location = () => {
                   </button>
                 </div>
                 <div className="flex-col items-start justify-start">
-                  <p className="small-medium lg:paragraph-medium">
+                  <p className="small-medium lg:paragraph-medium mt-7">
                     Popular Cities
                   </p>
                   <ul className="flex w-[380px] flex-wrap items-center justify-center space-x-2 space-y-2 py-3 lg:w-[580px] lg:space-x-6 lg:space-y-4">
