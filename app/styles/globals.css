@@ -145,7 +145,7 @@
 
   .add-property-button {
     @apply text-nowrap rounded-[8px] bg-black px-[18px] py-[10px] small-medium
-     text-white transition-colors hover:border hover:border-black hover:bg-white
+     text-white transition-colors duration-200 hover:border hover:border-black hover:bg-white
       hover:text-black focus-visible:outline-none focus-visible:ring-2 
       focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
       sm:px-[14px] sm:py-2 sm:extra-small-medium md:px-3 md:py-[8px] lg:px-5 lg:py-[12px]
