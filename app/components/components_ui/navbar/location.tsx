@@ -23,7 +23,6 @@ import {
 
 const Location = () => {
   const [state, setState] = useState("Residential");
-
   return (
     <NavigationMenu className="mt-[-10px] lg:mt-[-12px]">
       <NavigationMenuList>
@@ -100,7 +99,7 @@ const Location = () => {
                     placeholder="Search City"
                     className="h-10 border-none text-[10px] text-gray-500 lg:ml-[10px] lg:h-16 lg:text-[14px]"
                   />
-                  <button className="extra-small-semibold lg:body-semibold rounded-[6px] bg-black px-4 py-[6px] text-white">
+                  <button className="extra-small-semibold lg:body-semibold rounded-[6px] border border-black bg-black px-4 py-[6px] text-white transition-colors duration-200 hover:bg-white hover:text-black">
                     Search
                   </button>
                 </div>
