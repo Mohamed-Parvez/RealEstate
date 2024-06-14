@@ -16,7 +16,9 @@ const NavBar = () => {
         px-4 py-9 sm:px-2 md:px-3 lg:px-6"
       >
         <div className="flex-between gap-2">
-          <Logo />
+          <Link href={"/"}>
+            <Logo />
+          </Link>
           <div className="hidden sm:block">
             <Location />
           </div>
